@@ -6,7 +6,7 @@ I was already familiar with the technique behind the Variance Shadow Maps by exp
 ## Main Features:
 *  Deferred shading with Real-Time soft shadows utilizing the Moment Shadow Map technique.
 *  Ability to change the shadow filtering kernel size dynamically.  Supports 7x7, 15x15, 23x23, 35x25, and higher shadow filtering using "moving averages" box filter done in a compute shader.
-*  Run-time debuggin of shadow map and light configuration thru the utilization of Dear ImGui library
+*  Run-time debugging of shadow map and light configuration thru the utilization of Dear ImGui library.
 
 ## Things I Learned:
 *  Using the Hamburger 4MSM algorithm indeed produces very nice soft shadows.
