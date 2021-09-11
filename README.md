@@ -11,8 +11,8 @@ I was already familiar with the technique behind the Variance Shadow Maps by exp
 ## Things I Learned:
 *  Using the Hamburger 4MSM algorithm indeed produces very nice soft shadows.
 *  As the paper suggested, I first tried using the biad value (0.00003) and didn't notice any obvious light-bleeding artifacts.  I then moved the light source around and quickly ran into what the paper described as "slight quantization noise."
-Those artifacts were quite noticeable. Increasing the bias value by a facter of 10 did eliminate this ugly quantization noise completely, but then the light-bleeding will become more
-obvious.  So, basically, just like their predecessors (VSM and EVSM), the Moment Shadows suffer from similar precision issue and require having just the right biasing value to 
+Those artifacts were quite noticeable. Increasing the bias value by a factor of 10 did eliminate this ugly quantization noise completely, but then the light-bleeding will become more
+obvious.  So, basically, just like their predecessors (VSM and EVSM), the Moment Shadows suffer from similar precision issues and require having just the right biasing value to 
 produce acceptable results.  Not to mention doing more per pixel calculations and even utilizing up to 128 bits per texel, which is quite a bit of memory and bandwidth.
 
 ![Alt Text](https://github.com/timurson/MomentShadowMapping/blob/master/Image1.PNG)
